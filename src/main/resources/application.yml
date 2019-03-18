@@ -1,0 +1,18 @@
+server:
+  port: 6000
+  servlet:
+    context-path: /shop-api
+# You can change the database configuration
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/shopDb
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
